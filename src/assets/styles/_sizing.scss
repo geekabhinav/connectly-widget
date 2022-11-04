@@ -1,0 +1,26 @@
+/*
+!* Older browsers *!
+#connectly-wrapper {
+  font-size: 16px;
+}
+
+!* Modern browsers only need this one *!
+@media screen and (min-width: 25em) {
+  #connectly-wrapper {
+    font-size: calc(16px + (24 - 20) * (100vw - 400px) / (800 - 400));
+  }
+}
+
+!* Safari <8 and IE <11 *!
+@media screen and (min-width: 25em) {
+  #connectly-wrapper {
+    font-size: calc(16px + (24 - 20) * (100vw - 400px) / (800 - 400));
+  }
+}
+
+@media screen and (min-width: 50em) {
+  #connectly-wrapper {
+    font-size: calc(16px + (24 - 20) * (100vw - 400px) / (800 - 400));
+  }
+}
+*/

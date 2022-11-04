@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+@import "variables";
+@import "animations";
+
+$font-stack: "Poppins", Helvetica, sans-serif;
+$primary-color: #000;
+
+#connectly-wrapper {
+  font-family: $font-stack;
+  color: $primary-color;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: var(--cn-font-size-default);
+  line-height: calc(var(--cn-font-size-default)*1.2);
+
+  main {
+    position: relative;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+      textarea {
+        font-family: $font-stack;
+        color: $primary-color;
+      }
+    }
+  }
+}

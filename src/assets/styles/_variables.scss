@@ -1,0 +1,48 @@
+@use 'media-queries.scss' as *;
+
+$font-size-default: 14px;
+$img-size-big-default: 34px;
+$img-size-small-default: 24px;
+$spacing-default: 8px;
+
+:root {
+  --cn-font-size-default: #{$font-size-default};
+
+  // Large bubble sizes
+  --cn-font-size-big: 1.1em;
+  --cn-img-size-big: #{$img-size-big-default};
+  --cn-spacing-default: #{$spacing-default};
+  --cn-padding-big: calc(#{$spacing-default} * 1.6);
+
+  // Small bubble sizes
+  --cn-font-size-small: 0.9em;
+  --cn-img-size-small: #{$img-size-small-default};
+  --cn-padding-small: calc(#{$spacing-default} * 1.5);
+
+  // circle bubble
+  --cn-padding-circle: #{$spacing-default};
+
+  @include xl() {
+    --cn-font-size-default: calc(#{$font-size-default} * 1.3);
+    --cn-img-size-big: calc(#{$img-size-big-default} * 1.3);
+    --cn-img-size-small: calc(#{$img-size-small-default} * 1.3);
+  }
+
+  @include lg() {
+    --cn-font-size-default: calc(#{$font-size-default} * 1.2);
+    --cn-img-size-big: calc(#{$img-size-big-default} * 1.2);
+    --cn-img-size-small: calc(#{$img-size-small-default} * 1.2);
+  }
+
+  @include lt-lg() {
+    --cn-font-size-default: calc(#{$font-size-default} * 1.1);
+    --cn-img-size-big: calc(#{$img-size-big-default} * 1.1);
+    --cn-img-size-small: calc(#{$img-size-small-default} * 1.1);
+  }
+
+  /*@include lt-md() {
+    --cn-font-size-default: calc(#{$font-size-default} * 1.1);
+    --cn-img-size-big: calc(#{$img-size-big-default} * 1);
+    --cn-img-size-small: calc(#{$img-size-small-default} * 1.1);
+  }*/
+}

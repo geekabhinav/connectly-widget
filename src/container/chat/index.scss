@@ -1,0 +1,83 @@
+#connectly-wrapper {
+  .chat-container {
+    min-width: 250px;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #DDD;
+    border-bottom: 0;
+    box-shadow: 0 8px 9px -10px #666;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: -20px;
+    .chat-body, .chat-header, .chat-input {
+      padding: var(--cn-padding-big);
+    }
+
+    .chat-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: cornflowerblue;
+
+      h4 {
+        margin: 0;
+        font-weight: normal;
+      }
+
+      img {
+        width: calc(var(--cn-img-size-small) * 0.7);
+        height: calc(var(--cn-img-size-small) * 0.7);
+      }
+    }
+
+    .chat-body {
+      display: block;
+      height: 400px;
+      overflow-y: scroll;
+      p {
+        padding: var(--cn-padding-big);
+        margin-top: 0;
+        background-color: #caf2ff;
+        border-radius: var(--cn-spacing-default);
+        font-size: calc(var(--cn-font-size-small) * 0.9);
+        color: #333;
+      }
+    }
+
+    .chat-input {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      box-shadow: 0 -8px 9px -10px #666;
+
+      textarea {
+        flex-basis: 70%;
+        margin-right: var(--cn-spacing-default);;
+        border-radius: var(--cn-spacing-default);
+        border: 1px solid #CCC;
+        font-size: var(--cn-font-size-small);
+        padding: var(--cn-padding-small);
+      }
+      a {
+        cursor: pointer;
+        flex-basis: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: cornflowerblue;
+        border-radius: var(--cn-spacing-default);
+        color: white;
+        font-size: var(--cn-font-size-small);
+        text-decoration: none!important;
+        &:hover {
+          background-color: #5b90ef;
+        }
+        &:active {
+          background-color: #558def;
+        }
+      }
+    }
+  }
+}
